@@ -1,0 +1,151 @@
+@import 'pure.css';
+@import 'nav.css';
+@import 'footer.css';
+@import 'media.css';
+
+.header {
+	box-sizing: border-box;
+	border-bottom: 0.5px solid var(--color-nav-gray);
+	box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.12);
+	background: var(--color-white);
+}
+
+a {
+	color: var(--color-dark) !important;
+}
+.user-action-link.blue {
+	color: var(--color-blue) !important;
+}
+
+/* *catalog start */
+
+.active {
+	color: var(--color-black) !important;
+}
+.root {
+	display: flex;
+	padding-bottom: 32.5px;
+	p {
+		color: var(--color-dark);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 19px;
+		margin-right: 15px;
+		cursor: pointer;
+	}
+}
+.catalog {
+	padding-top: 150px;
+}
+
+.catalog-info {
+	display: flex;
+}
+.logo-p {
+	top: 15%;
+}
+.left {
+	width: 10%;
+	h1 {
+		color: var(--color-dark);
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.active {
+		color: rgb(0, 175, 239) !important;
+		font-size: 18px;
+		font-weight: 400;
+	}
+	p {
+		margin-top: 32px;
+		color: var(--color-dark);
+		font-size: 18px;
+		font-weight: 400;
+		cursor: pointer;
+	}
+	p:hover {
+		color: rgb(0, 175, 239);
+	}
+}
+
+.right {
+	padding-left: 210px;
+	width: 90%;
+}
+.catalog-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.catalog-card {
+	/* width: 289px;
+	height: 340px; */
+	border-radius: 10px;
+
+	box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+
+	img {
+		width: 100%;
+		border-radius: 10px;
+	}
+}
+
+.catalog-card-info {
+	padding: 20px;
+	h1 {
+		color: var(--color-dark);
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 21px;
+		letter-spacing: 2%;
+		margin-bottom: 10px;
+	}
+	a {
+		color: var(--color-dark);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 19px;
+	}
+}
+
+.catalog-hr {
+	width: 289px;
+	border-top: 0.5px solid rgb(229, 231, 235);
+	border-bottom: 0px;
+}
+
+@media (max-width: 1200px) {
+	.catalog-info {
+		display: block !important;
+	}
+	.catalog-card {
+		margin-bottom: 0px !important;
+	}
+}
+
+@media (max-width: 660px) {
+	.catalog-cards {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+	.catalog-card {
+		width: 100%;
+		margin-right: 0px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 450px) {
+	.catalog-cards {
+		gap: 10px;
+		justify-content: center !important;
+	}
+	.catalog-card {
+		margin: 0 auto;
+	}
+	.right {
+		padding: 0px;
+	}
+}

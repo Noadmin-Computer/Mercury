@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mercury</title>
+		
+		<link rel="stylesheet" href="/styles/css/style.css" />
+		<link
+		href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+		rel="stylesheet"
+	/>
+	<link rel="icon" type="image/x-icon" href="/styles/images/logo-b.svg" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body>
+		<div class="loader"></div>
+		<header	 class="header">
+			
+				<nav class="menu">
+					<div class="container">
+					<div class="menu-row">
+						<input id="nav-toggle" type="checkbox">
+						<a href="/app.html" class="logo">
+							<img src="/styles/images/logo.svg" alt="logo" class="logo-white "/>
+							<img src="/styles/images/logo-b.svg" alt="logo" class="logo-blue remove__logo">
+						</a>
+						
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="/app.html" class="menu-link">Главная</a>
+							</li>
+							<li class="menu-item">
+								<a href="/pages/about.html" class="menu-link">О компании</a>
+							</li>
+							<li class="menu-item">
+								<a href="/pages/categories.html" class="menu-link">Каталог</a>
+							</li>
+							<li class="menu-item">
+								<a href="/pages/contact.html" class="menu-link">Контакты</a>
+							</li>
+						</ul>
+					<ul class="user-actions" >
+						<li class="user-action-item">
+							<a href="#" class="user-action-link blue">
+								<ion-icon name="search-sharp" class="ion-icon"></ion-icon>
+							</a>
+						</li>
+						<li class="user-action-item">
+							<a href="tel:+998 77 258 73 77" class="user-action-link blue">
+								<ion-icon name="call-outline" class="ion-icon"></ion-icon>
+							</a>
+						</li>
+						<li class="user-action-item" style="margin-left: 50px">
+							<a href="#" class="user-action-link">RU</a>
+						</li>
+						<li class="user-action-item">
+							<a href="#" class="user-action-link">UZ</a>
+						</li>
+						
+					</ul>
+				
+					
+			</div>
+			<label for="nav-toggle" class="icon-burger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</label>
+				</nav>
+
+				<div class="container">
+				<div class="banner">
+					<h1 class="banner-title" >
+						Полипропиленовые <br />
+						трубы и фиттинги <br />премиум класса
+					</h1>
+					<a href="/pages/catalog.html"><button class="banner-btn">Подробнее</button></a>
+			
+				</div>
+			</div>
+		</header>
+		<main>
+			<!-- about start -->
+		<section class="about from-top" data-aos="fade-up">
+			<div class="container">
+				<img src="/styles/images/logo-p.png" alt="logo" class="logo-p">
+				<h1 class="title">О компании</h1>
+
+					<div class="title-hr"></div>
+
+				<div class="about-inner">
+					<div class="left">
+						<p class="about-text">
+							Завод Mercury — один из производителей в Узбекистане, который
+							более 5 лет выпускает трубопроводы из полипропилена и полиэтилена
+							для внутренних и наружных сетей инженерных коммуникаций.
+							Предприятие оснащено современным высокоточным европейским
+							оборудованием. На заводе работает аттестованная лаборатория, в
+							которой следят за качеством всей продукции, выпускаемой на
+							предприятии.
+							<br>
+							<br>
+							Благодаря постоянному контролю, продукция,
+							производимая заводом, сохраняет стабильно высокое качество. Все
+							продукция, выпускаемая предприятием, имеет срок гарантии 50 лет.
+							Трубопроводы, смонтированные изданного материала, не ржавеют, не
+							меняют вкус и химические свойства протекающей жидкости.
+						</p>
+	
+						<a href="/pages/about.html"><button class="about-button">Подробнее</button></a>
+						
+					</div>
+					<div class="right">
+						<img
+							src="/styles/images/about-2.png"
+							alt="about"
+							class="right-image"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- about end -->
+		<!-- categories start -->
+		<section class="categories from-top" data-aos="fade-up">
+			<div class="container">
+				<p class="title">Каталог</p>
+				<div class="title-hr"></div>
+
+				<div class="categories-cards">
+
+					<div class="categories-card">
+						<a href="/pages/catalog.html">Трубы ППР</a>
+					</div>
+					<div class="categories-card">
+						<a href="/pages/catalog.html">Фитинги ППР</a>
+					</div>
+					<div class="categories-card">
+						<a href="/pages/catalog.html">
+							Фитинги для <br />
+							канализационных труб
+						</a>
+					</div>
+					<div class="categories-card">
+						<a href="/pages/catalog.html">Канализационные трубы</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- categories end -->
+
+		<!-- catalog start -->
+		<section class="catalog from-top" data-aos="fade-up">
+			<div class="container">
+				<h1 class="title">Новинки</h1>
+				<div class="title-hr"></div>
+
+
+				<a href="/pages/catalog.html" class="title-link">Смотреть все</a>
+				
+					<swiper-container
+					class="mySwiper"
+					pagination="true"
+					pagination-clickable="true"
+					slides-per-view="4"
+					space-between="20"
+					free-mode="true">
+						<swiper-slide>
+							<div class="catalog-card">
+								<img src="/styles/images/c1.png" alt="card" class="catalog-img" />
+								<div class="catalog-card-info">
+									<h1>Труба PN10 XBC </h1>
+									<a href="/pages/catalog.html">Подробнее ></a>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="catalog-card">
+								<img src="/styles/images/c2.png" alt="card" class="catalog-img" />
+								<div class="catalog-card-info">
+									<h1>Труба PN20 ГBC  </h1>
+									<a href="/pages/catalog.html">Подробнее ></a>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="catalog-card">
+								<img src="/styles/images/c3.png" alt="card" class="catalog-img" />
+								<div class="catalog-card-info">
+									<h1>Труба PN16 XBC  </h1>
+									<a href="/pages/catalog.html">Подробнее ></a>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="catalog-card">
+								<img src="/styles/images/c4.png" alt="card" class="catalog-img" />
+								<div class="catalog-card-info">
+									<h1>Труба PN25 ГBC  </h1>
+									<a href="/pages/catalog.html">Подробнее ></a>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="catalog-card">
+								<img src="/styles/images/c2.png" alt="card" class="catalog-img" />
+								<div class="catalog-card-info">
+									<h1>Труба PN10 XBC </h1>
+									<a href="/pages/catalog.html">Подробнее ></a>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="catalog-card">
+								<img src="/styles/images/c3.png" alt="card" class="catalog-img" />
+								<div class="catalog-card-info">
+									<h1>Труба PN10 XBC </h1>
+									<a href="/pages/catalog.html">Подробнее ></a>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="catalog-card">
+								<img src="/styles/images/c1.png" alt="card" class="catalog-img" />
+								<div class="catalog-card-info">
+									<h1>Труба PN10 XBC </h1>
+									<a href="/pages/catalog.html">Подробнее ></a>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="catalog-card">
+								<img src="/styles/images/c1.png" alt="card" class="catalog-img" />
+								<div class="catalog-card-info">
+									<h1>Труба PN10 XBC </h1>
+									<a href="/pages/catalog.html">Подробнее ></a>
+								</div>
+							</div>
+						</swiper-slide>
+							<div class="swiper-pagination"></div>
+					</swiper-container>
+
+
+
+					</div>
+				
+				
+			</div>
+		</section>
+		<!-- catalog end -->
+		<!-- client start -->
+		<section class="client from-top" data-aos="fade-up">
+			<div class="container">
+				<h1 class="title">Наши клиенты</h1>
+				<div class="title-hr"></div>
+
+
+				<div class="client-cards">
+					<div class="client-card">
+						<img src="/styles/images/cm1.svg" alt="" />					
+						<img src="/styles/images/cm2.svg" alt="" />
+						<img src="/styles/images/cm3.svg" alt="" />					
+						<img src="/styles/images/cm4.svg" alt="" />
+						<img src="/styles/images/cm5.svg" alt="" />
+						<img src="/styles/images/cm1.svg" alt="" />
+						<img src="/styles/images/cm2.svg" alt="" />
+						<img src="/styles/images/cm3.svg" alt="" />
+						<img src="/styles/images/cm4.svg" alt="" />
+						<img src="/styles/images/cm5.svg" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- client end -->
+		<!-- contact start -->
+		<section class="contact from-top" data-aos="fade-up">
+			<div class="container">
+				<div class="contact-inner">
+					<div class="left">
+						<h1>Связаться с нами</h1>
+						<div class="contact-info">
+							<div class="contact-info-block">
+								<div class="icon">
+									<img src="/styles/images/email.png" alt="email" />
+								</div>
+								<div class="contact-info-adress">
+									<p>Электронная почта</p>
+									<h2>info@email.com</h2>
+								</div>
+							</div>
+							<div class="contact-info-block">
+								<div class="icon">
+									<img src="/styles/images/call-b.png" alt="call" />
+								</div>
+								<div class="contact-info-adress">
+									<p>Номер телефона</p>
+									<h2>+998 77 258 73 77</h2>
+								</div>
+							</div>
+							<div class="contact-info-block">
+								<div class="icon">
+									<img src="/styles/images/location.png" alt="location" />
+								</div>
+
+								<div class="contact-info-adress">
+									<h2>
+										Узбекистан, Ташкентская область, город <br />Янгиюль, улица
+										Арчазор, 26
+									</h2>
+								</div>
+							</div>
+
+							<hr class="hr" />
+							<div class="links">
+								<a href="https://www.facebook.com/">Facebook</a>
+								<a href="https://www.instagram.com/">Instagram</a>
+								<a href="https://telegram.org/">Telegram</a>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48096.64852481309!2d68.9774844265896!3d41.11180583853375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae7baa3624215b%3A0xff4d428930726164!2sYangiyul%2C%20Tashkent%20Region%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1711195199591!5m2!1sen!2s"
+							width="600"
+							height="450"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- contact end -->
+		</main>
+		
+		<!-- footer start-->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-inner">
+					<div class="footer-address">
+						<h3>
+							Наш адрес: Узбекистан, Ташкентская область, город <br />
+							Янгиюль, улица Арчазор, 26
+						</h3>
+						<div class="footer-social">
+							<a href="https://www.instagram.com/"><ion-icon name="logo-instagram" size = "large"></ion-icon></a>
+							<a href="https://www.facebook.com/"><ion-icon name="navigate-outline"size = "large"></ion-icon></a>
+							<a href="https://telegram.org/"><ion-icon name="logo-facebook"size = "large"></ion-icon></a>
+						</div>
+					</div>
+
+					<div class="footer-info">
+						<a href="tel: +998 77 258 73 77"><h3>+998 77 258 73 77</h3></a>
+
+						<p>info@email.com</p>
+					</div>
+					<div class="footer-dev">
+						<p>Сайт создан <strong>itdesign.studio</strong></p>
+						<p>С©2024. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+		<script src="/script/loader.js"></script>
+		<script src="/script/nav.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init();
+		</script>	
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+	<script src="/script/swiper.js"></script>
+	<script>
+			const swiperEl = document.querySelector('swiper-container')
+			Object.assign(swiperEl, {
+				breakpoints: {
+					0: {
+						slidesPerView: 1,
+					},
+					520: {
+						slidesPerView: 2,
+					},
+					950: {
+						slidesPerView: 3,
+					},
+					1024: {
+						slidesPerView: 4,
+					},
+				},
+			})
+			swiperEl.initialize()
+	  </script>
+	</body>
+	
+</html>
