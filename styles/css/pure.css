@@ -40,8 +40,8 @@ body,html{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #333333;
-	transition: opacity 0.75s, visibility 0.75s;
+	background: var(--color-white);
+	transition: opacity .90s, visibility .90s;
   }
   
   .loader--hidden {
@@ -53,8 +53,8 @@ body,html{
 	content: "";
 	width: 75px;
 	height: 75px;
-	border: 15px solid #dddddd;
-	border-top-color: #009578;
+	border: 15px solid var(--color-nav-gray);
+	border-top-color: var(--color-blue);
 	border-radius: 50%;
 	animation: loading 0.75s ease infinite;
   }

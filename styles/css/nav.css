@@ -10,6 +10,7 @@
 	width: 100%;
 	min-height: 80px;
 	padding: 32px 0;
+
 	/* padding-left: 200px;
 	padding-right: 200px; */
 }
@@ -18,6 +19,7 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	transition: 0 !important;
 }
 .menu.scroll {
 	background: var(--color-white) !important;
