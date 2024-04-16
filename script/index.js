@@ -10,5 +10,3 @@ document.addEventListener('scroll', () => {
 		menu_list.classList.remove('white')
 	}
 })
-
-/*=============== SWIPER JS ===============*/

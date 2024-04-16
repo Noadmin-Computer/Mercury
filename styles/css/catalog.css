@@ -10,6 +10,10 @@
 	background: var(--color-white);
 }
 
+.icon-burger .line {
+	background-color: var(--color-blue) !important;
+}
+
 a {
 	color: var(--color-dark) !important;
 }

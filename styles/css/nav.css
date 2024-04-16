@@ -30,9 +30,22 @@
 		color: var(--color-blue) !important;
 	}
 	.icon-burger .line {
-		visibility: visible;
+		background-color: var(--color-blue);
 	}
 }
+
+#nav-toggle:checked ~ .icon-burger .line:nth-child(1) {
+	transform: rotate(45deg) translateY(14.5px);
+}
+#nav-toggle:checked ~ .icon-burger .line:nth-child(3) {
+	transform: rotate(-45deg) translateY(-14.5px);
+}
+#nav-toggle:checked ~ .icon-burger .line:nth-child(2) {
+	transform: translateX(-50px);
+	background-color: transparent !important;
+	box-shadow: none;
+}
+
 .logo img {
 	height: 40px;
 }
@@ -115,12 +128,12 @@
 	right: 5%;
 	top: 50%;
 	transform: translateY(-50%);
+	cursor: pointer;
 }
 .menu .icon-burger .line {
-	visibility: hidden;
 	width: 30px;
 	height: 5px;
-	background-color: var(--color-blue);
+	background-color: var(--color-white);
 	margin: 5px;
 	border-radius: 3px;
 	transition: all 0.3s ease-in-out;

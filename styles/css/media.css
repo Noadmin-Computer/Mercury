@@ -137,21 +137,11 @@
 	nav :checked ~ .menu-list {
 		bottom: 0;
 	}
-	nav :checked ~ .menu {
-		background-color: var(--color-white) !important;
-	}
 	nav .icon-burger {
 		display: block !important;
 	}
-	nav :checked ~ .icon-burger .line:nth-child(1) {
-		transform: translateY(10px) rotate(225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(3) {
-		transform: translateY(-10px) rotate(-225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(2) {
-		opacity: 0;
-	}
+
+
 
 	.catalog-cards {
 		justify-content: center !important;
@@ -288,7 +278,6 @@
 		max-width: 100% !important;
 		padding-left: 10px;
 		padding-right: 10px;
-
 	}
 
 	.root p {
@@ -301,11 +290,11 @@
 			height: 350px !important;
 		}
 	}
-	.catalog-card-info{
-		h1{
+	.catalog-card-info {
+		h1 {
 			font-size: 15px !important;
 		}
-		a{
+		a {
 			font-size: 15px !important;
 		}
 	}
