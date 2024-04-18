@@ -41,7 +41,7 @@ body,html{
 	align-items: center;
 	justify-content: center;
 	background: var(--color-white);
-	transition: opacity .50s, visibility .50s;
+	transition: opacity .15s, visibility .15s;
   }
   
   .loader--hidden {
@@ -56,7 +56,7 @@ body,html{
 	border: 15px solid var(--color-nav-gray);
 	border-top-color: var(--color-blue);
 	border-radius: 50%;
-	animation: loading 0.40s ease infinite;
+	animation: loading 0.50s ease infinite;
   }
   
   @keyframes loading {
