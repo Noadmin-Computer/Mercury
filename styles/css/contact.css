@@ -10,6 +10,12 @@
 	background: var(--color-white);
 }
 
+.menu.scroll {
+	.menu-link::after {
+		background-color: var(--color-white) !important;
+	}
+}
+
 .icon-burger .line {
 	background-color: var(--color-blue) !important;
 }
@@ -38,13 +44,14 @@ a {
 }
 .contact-info-block {
 	display: flex;
-	i {
+	ion-icon {
+		width: 32px;
 		color: var(--color-blue);
 	}
 }
 .contact-info-adress {
 	padding-bottom: 36px;
-	padding-left: 16px;
+	padding-left: 23px;
 	p {
 		color: var(--color-black);
 		font-size: 14px;
@@ -65,7 +72,10 @@ a {
 }
 
 .logo-p {
+	left: 0px;
+	z-index: -1;
 	top: 9%;
+	position: fixed;
 }
 .left {
 	width: 50%;
@@ -100,4 +110,10 @@ a {
 	letter-spacing: 1%;
 	text-align: left;
 	margin-right: 30px;
+}
+
+@media (max-width: 650px) {
+	.from-top {
+		padding-top: 130px !important;
+	}
 }

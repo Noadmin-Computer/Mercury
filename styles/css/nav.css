@@ -22,22 +22,24 @@
 	transition: 0 !important;
 }
 .menu.scroll {
-	background: var(--color-white) !important;
+	background: var(--color-blue) !important;
 	a {
-		color: var(--color-dark) !important;
+		color: var(--color-white) !important;
 	}
 	.user-action-link.blue {
-		color: var(--color-blue) !important;
+		color: var(--color-white) !important;
 	}
 	.icon-burger .line {
-		background-color: var(--color-blue);
+		background-color: var(--color-white) !important;
 	}
 }
 
 #nav-toggle:checked ~ .icon-burger .line:nth-child(1) {
+	background-color: var(--color-white) !important;
 	transform: rotate(45deg) translateY(14.5px);
 }
 #nav-toggle:checked ~ .icon-burger .line:nth-child(3) {
+	background-color: var(--color-white) !important;
 	transform: rotate(-45deg) translateY(-14.5px);
 }
 #nav-toggle:checked ~ .icon-burger .line:nth-child(2) {
@@ -131,6 +133,7 @@
 	top: 50%;
 	transform: translateY(-50%);
 	cursor: pointer;
+	z-index: 10;
 }
 .menu .icon-burger .line {
 	width: 30px;

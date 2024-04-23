@@ -10,6 +10,12 @@
 	background: var(--color-white);
 }
 
+.menu.scroll {
+	.menu-link::after {
+		background-color: var(--color-white) !important;
+	}
+}
+
 .icon-burger .line {
 	background-color: var(--color-blue) !important;
 }
@@ -49,7 +55,10 @@ a {
 	width: 100%;
 }
 .logo-p {
-	top: 10%;
+	left: 0px;
+	z-index: -1;
+	top: 5%;
+	position: fixed;
 }
 
 .left {

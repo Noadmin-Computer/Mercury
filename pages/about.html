@@ -8,7 +8,10 @@
 		<link rel="icon" type="image/x-icon" href="/styles/images/logo-b.svg" />
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-autoplay.min.css" integrity="sha512-LlHSkMTvyRwh1YjzXwk6bxjdt3huGhCyK1vlCC6f7Db/g+2sYXz2YNasyZHnMUgykqPksmD/44DIINhqpWBjig==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+		<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	  />
 	</head>
 	<body>
 		<div class="loader"></div>
@@ -26,7 +29,7 @@
 						</label>
 						<a href="/index.html" class="logo">
 							<img src="/styles/images/logo.svg" alt="logo" class="logo-white "/>
-							<img src="/styles/images/logo-b.svg" alt="logo" class="logo-blue remove__logo">
+
 						</a>
 						<ul class="menu-list">
 							<li class="menu-item">
@@ -66,7 +69,6 @@
 			</div>
 			
 				</nav>
-				
 				<div class="banner">
 					<h1 class="banner-title">О компании “MERCURY”</h1>
 				</div>
@@ -124,21 +126,18 @@
 				<div class="container">
 					<h1 class="title">Наши клиенты</h1>
 					<div class="title-hr"></div>
-
-					<div class="client-cards">
-						<div class="client-card">
-							<img src="/styles/images/cm1.svg" alt="" />
-							<img src="/styles/images/cm2.svg" alt="" />
-							<img src="/styles/images/cm3.svg" alt="" />
-							<img src="/styles/images/cm4.svg" alt="" />
-							<img src="/styles/images/cm5.svg" alt="" />
-							<img src="/styles/images/cm1.svg" alt="" />
-							<img src="/styles/images/cm2.svg" alt="" />
-							<img src="/styles/images/cm3.svg" alt="" />
-							<img src="/styles/images/cm4.svg" alt="" />
-							<img src="/styles/images/cm5.svg" alt="" />
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+						  <div class="swiper-slide client-swiper"><img src="/styles/images/cm2.svg" alt=""></div>
+						  <div class="swiper-slide client-swiper"><img src="/styles/images/cm3.svg" alt=""></div>
+						  <div class="swiper-slide client-swiper"><img src="/styles/images/cm4.svg" alt=""></div>
+						  <div class="swiper-slide client-swiper"><img src="/styles/images/cm5.svg" alt=""></div>
+						  <div class="swiper-slide client-swiper"><img src="/styles/images/cm2.svg" alt=""></div>
+						  <div class="swiper-slide client-swiper"><img src="/styles/images/cm3.svg" alt=""></div>
+						  <div class="swiper-slide client-swiper"><img src="/styles/images/cm4.svg" alt=""></div>
+						  <div class="swiper-slide client-swiper"><img src="/styles/images/cm5.svg" alt=""></div>
 						</div>
-					</div>	
+				</div>
 				</div>
 			</section>
 		</main>
@@ -183,14 +182,16 @@
 		  AOS.init();
 		</script>
 		<script>
-			let gallery = document.getElementById('lightgallery')
+			let gallery = document.getElementById('#lightgallery')
 			lightGallery(gallery,{
 				controls : false
 			})
 		</script>
-		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>	
+		<script src="/script/swiper.js"></script>
 	</body>
 	</body>
 </html>

@@ -57,7 +57,9 @@
 	height: 460px;
 }
 .logo-p {
-	top: 96%;
+	z-index: -1;
+	top: 15%;
+	position: fixed;
 }
 
 /* *certificate  */
@@ -76,68 +78,20 @@
 }
 
 /* *clients */
-@keyframes slides {
-	from {
-		transform: translateX(0);
+
+.client-swiper img {
+	width: 300px;
+}
+
+@media (max-width: 500px) {
+	.client-swiper img {
+		width: 220px !important;
 	}
-	to {
-		transform: translateX(calc(-250px * 3));
-	}
-}
-
-.client-cards {
-	overflow: hidden;
-	position: relative;
-	white-space: nowrap;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-auto-rows: auto;
-	justify-content: center;
-	gap: 20px;
-	justify-content: space-around;
-	align-items: center;
-}
-.client-cards:before,
-.logos:after {
-	position: absolute;
-	top: 0;
-	content: '';
-	width: 250px;
-	height: 100%;
-	z-index: 2;
-}
-.client-cards:before {
-	left: 0;
-	background: linear-gradient(
-		to left,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
-}
-
-.client-cards:after {
-	right: 0;
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0),
-		rgb(255, 255, 255)
-	);
-}
-.client-card {
-	display: inline-block;
-	animation: 8s slides infinite linear;
-}
-
-.client-cards img:hover .logo_items {
-	animation-play-state: paused;
-}
-
-.client-card img {
-	height: 100px;
 }
 
 @media (max-width: 400px) {
 	.banner-title {
-		font-size: 30px !important;
+		font-size: 28px !important;
+		line-height: 40px;
 	}
 }
